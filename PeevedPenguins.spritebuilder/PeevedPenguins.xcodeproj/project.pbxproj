@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01DB480E195A2BD000C40E52 /* Penguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DB480D195A2BD000C40E52 /* Penguin.m */; };
-		01DB4812195A2C2100C40E52 /* Seal.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DB4811195A2C2100C40E52 /* Seal.m */; };
+		0103E02C195A4362006B3904 /* Penguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103E02B195A4362006B3904 /* Penguin.m */; };
+		0103E02F195A4384006B3904 /* Seal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103E02E195A4384006B3904 /* Seal.m */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -58,10 +58,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01DB480C195A2BD000C40E52 /* Penguin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Penguin.h; path = Source/Penguin.h; sourceTree = "<group>"; };
-		01DB480D195A2BD000C40E52 /* Penguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Penguin.m; path = Source/Penguin.m; sourceTree = "<group>"; };
-		01DB4810195A2C2100C40E52 /* Seal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Seal.h; path = Source/Seal.h; sourceTree = "<group>"; };
-		01DB4811195A2C2100C40E52 /* Seal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Seal.m; path = Source/Seal.m; sourceTree = "<group>"; };
+		0103E02A195A4362006B3904 /* Penguin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Penguin.h; path = Source/Penguin.h; sourceTree = "<group>"; };
+		0103E02B195A4362006B3904 /* Penguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Penguin.m; path = Source/Penguin.m; sourceTree = "<group>"; };
+		0103E02D195A4384006B3904 /* Seal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Seal.h; path = Source/Seal.h; sourceTree = "<group>"; };
+		0103E02E195A4384006B3904 /* Seal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Seal.m; path = Source/Seal.m; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -131,10 +131,10 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				01DB480C195A2BD000C40E52 /* Penguin.h */,
-				01DB480D195A2BD000C40E52 /* Penguin.m */,
-				01DB4810195A2C2100C40E52 /* Seal.h */,
-				01DB4811195A2C2100C40E52 /* Seal.m */,
+				0103E02A195A4362006B3904 /* Penguin.h */,
+				0103E02B195A4362006B3904 /* Penguin.m */,
+				0103E02D195A4384006B3904 /* Seal.h */,
+				0103E02E195A4384006B3904 /* Seal.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
@@ -350,10 +350,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01DB4812195A2C2100C40E52 /* Seal.m in Sources */,
+				0103E02F195A4384006B3904 /* Seal.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
-				01DB480E195A2BD000C40E52 /* Penguin.m in Sources */,
+				0103E02C195A4362006B3904 /* Penguin.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
