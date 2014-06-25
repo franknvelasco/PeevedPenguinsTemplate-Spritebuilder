@@ -145,11 +145,19 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>limitMin</string>
+					<key>type</key>
+					<string>Degrees</string>
+					<key>value</key>
+					<real>-230</real>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>limitMax</string>
 					<key>type</key>
 					<string>Degrees</string>
 					<key>value</key>
-					<real>125.45623016357422</real>
+					<real>0.0</real>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -171,6 +179,8 @@
 					<integer>1</integer>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>UUID</key>
