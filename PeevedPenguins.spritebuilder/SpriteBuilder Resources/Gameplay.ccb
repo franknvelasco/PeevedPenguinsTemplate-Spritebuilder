@@ -246,7 +246,7 @@
 					<string>EnabledFloat</string>
 					<key>value</key>
 					<array>
-						<real>100</real>
+						<real>0.0</real>
 						<true/>
 					</array>
 				</dict>
