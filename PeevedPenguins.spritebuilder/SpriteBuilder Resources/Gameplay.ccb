@@ -157,7 +157,7 @@
 					<key>type</key>
 					<string>Degrees</string>
 					<key>value</key>
-					<real>0.0</real>
+					<real>20</real>
 				</dict>
 				<dict>
 					<key>name</key>
