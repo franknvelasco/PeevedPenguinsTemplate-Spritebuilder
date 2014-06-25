@@ -11,7 +11,7 @@
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
     CCNode *_catapultArm;
-    CCNode *_levelNode;
+    CCNode *_contentNode;
 }
 
 // is called when CCB file has completed loading
@@ -20,7 +20,7 @@
     self.userInteractionEnabled = TRUE;
     
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
-    [_levelNode addChild:level];
+    [_contentNode addChild:level];
 }
 
 // called on every touch in this scene
@@ -45,7 +45,7 @@
     // ensure followed object is in visible are when starting
     self.position = ccp(0, 0);
     CCActionFollow *follow = [CCActionFollow actionWithTarget:penguin worldBoundary:self.boundingBox];
-    
+    [_contentNode runAction:follow];
 }
 
 - (void)retry {
