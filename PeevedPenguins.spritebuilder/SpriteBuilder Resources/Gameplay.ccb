@@ -1607,10 +1607,6 @@
 											<real>10</real>
 										</array>
 										<array>
-											<real>424.15289306640625</real>
-											<real>1.5496857166290283</real>
-										</array>
-										<array>
 											<real>963</real>
 											<real>10</real>
 										</array>
@@ -1623,10 +1619,6 @@
 									<array>
 										<array>
 											<array>
-												<real>413.63613891601562</real>
-												<real>0.0</real>
-											</array>
-											<array>
 												<real>963</real>
 												<real>0.0</real>
 											</array>
@@ -1635,25 +1627,11 @@
 												<real>10</real>
 											</array>
 											<array>
-												<real>424.15289306640625</real>
-												<real>1.5496857166290283</real>
-											</array>
-										</array>
-										<array>
-											<array>
-												<real>424.15289306640625</real>
-												<real>1.5496857166290283</real>
-											</array>
-											<array>
 												<real>0.0</real>
 												<real>10</real>
 											</array>
 											<array>
 												<real>0.0</real>
-												<real>0.0</real>
-											</array>
-											<array>
-												<real>413.63613891601562</real>
 												<real>0.0</real>
 											</array>
 										</array>
@@ -1721,6 +1699,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -1936,8 +1916,6 @@
 								<string>WaitingPenguin.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -2000,8 +1978,6 @@
 								<string>WaitingPenguin.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
