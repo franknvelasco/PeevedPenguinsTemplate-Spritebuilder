@@ -125,7 +125,7 @@
 					<key>type</key>
 					<string>Degrees</string>
 					<key>value</key>
-					<real>-93.986351013183594</real>
+					<real>-128.02665710449219</real>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -145,19 +145,11 @@
 				</dict>
 				<dict>
 					<key>name</key>
-					<string>limitMin</string>
-					<key>type</key>
-					<string>Degrees</string>
-					<key>value</key>
-					<real>-267.061279296875</real>
-				</dict>
-				<dict>
-					<key>name</key>
 					<string>limitMax</string>
 					<key>type</key>
 					<string>Degrees</string>
 					<key>value</key>
-					<real>50</real>
+					<real>125.45623016357422</real>
 				</dict>
 				<dict>
 					<key>name</key>
