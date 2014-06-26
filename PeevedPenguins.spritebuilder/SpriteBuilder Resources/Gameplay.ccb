@@ -141,7 +141,7 @@
 					<key>type</key>
 					<string>Degrees</string>
 					<key>value</key>
-					<real>45</real>
+					<real>90</real>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -165,7 +165,7 @@
 					<key>type</key>
 					<string>Degrees</string>
 					<key>value</key>
-					<real>-220</real>
+					<real>-190</real>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -195,8 +195,6 @@
 					<integer>1</integer>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -380,6 +378,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
