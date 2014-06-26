@@ -34,7 +34,7 @@ static const float MIN_SPEED = 1.f;
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     
-    CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
+    CCScene *level = [CCBReader loadAsScene:@"Levels/LevelWet"];
     [_levelNode addChild:level];
     
     // visualize physics bodies & joints
