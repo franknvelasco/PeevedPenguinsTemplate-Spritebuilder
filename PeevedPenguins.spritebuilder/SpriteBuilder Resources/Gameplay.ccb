@@ -141,7 +141,7 @@
 					<key>type</key>
 					<string>Float</string>
 					<key>value</key>
-					<real>5000</real>
+					<real>10000</real>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -171,6 +171,8 @@
 					</array>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -354,8 +356,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
