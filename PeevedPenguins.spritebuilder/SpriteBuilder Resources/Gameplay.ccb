@@ -125,7 +125,7 @@
 					<key>type</key>
 					<string>Degrees</string>
 					<key>value</key>
-					<real>-92.411399841308594</real>
+					<real>-3.1021900177001953</real>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -134,14 +134,6 @@
 					<string>Check</string>
 					<key>value</key>
 					<true/>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>dampedSpringRestAngle</string>
-					<key>type</key>
-					<string>Degrees</string>
-					<key>value</key>
-					<real>90</real>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -179,8 +171,6 @@
 					</array>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -364,6 +354,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
