@@ -11,7 +11,7 @@
 #import "Penguin.h" //Use Penguin class in here
 
 //Used to define the minimum speed a penguin must go before reverting camera back to begining
-static const float MIN_SPEED = 5.0f;
+static const float MIN_SPEED = 1.f;
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
