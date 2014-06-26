@@ -7,7 +7,11 @@
 //
 
 #import "Gameplay.h"
-#import "CCPhysics+ObjectiveChipmunk.h" //Hanle collision types
+#import "CCPhysics+ObjectiveChipmunk.h" //Handle collision types
+#import "Penguin.h" //Use Penguin class in here
+
+//Used to define the minimum speed a penguin must go before reverting camera back to begining
+static const float MIN_SPEED = 5.0f;
 
 @implementation Gameplay {
     CCPhysicsNode *_physicsNode;
@@ -17,8 +21,12 @@
     CCNode *_pullbackNode;
     CCNode *_mouseJointNode;
     CCPhysicsJoint *_mouseJoint;
-    CCNode *_currentPenguin;
+    Penguin *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
+    //used to follow the penguin as it flies
+    CCAction *_followPenguin;
+
+    
 }
 
 // is called when CCB file has completed loading
@@ -40,6 +48,46 @@
     _physicsNode.collisionDelegate = self;
 }
 
+//A cocos2d methos that is called upon at every frame
+- (void)update:(CCTime)delta
+{
+    //Check to see if the current penguin has launched
+    if (_currentPenguin.launched) {
+        // if speed is below minimum speed, assume this attempt is over
+        if (ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED){
+            [self nextAttempt];
+            return;
+        }
+    
+        //Check if the penguin has left from the left side of the screen
+        int xMin = _currentPenguin.boundingBox.origin.x;
+        
+        if (xMin < self.boundingBox.origin.x) {
+            [self nextAttempt];
+            return;
+        }
+    
+        //Check if the penguin has left from the right side of the screen
+        int xMax = xMin + _currentPenguin.boundingBox.size.width;
+    
+        if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
+            [self nextAttempt];
+            return;
+        }
+    }
+}
+
+//Start the implementation of scrolling the sceen back to the start
+- (void)nextAttempt {
+    //Set the current penguin to nil so we can implement the game to stop following the  penguin
+    _currentPenguin = nil;
+    [_contentNode stopAction:_followPenguin];
+    
+    //Move back to start
+    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(0, 0)];
+    [_contentNode runAction:actionMoveTo];
+}
+
 // called on every touch in this scene
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     
@@ -55,7 +103,9 @@
          _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:3000.f damping:150.f];
          
          // create a penguin from the ccb-file
-         _currentPenguin = [CCBReader load:@"Penguin"];
+         //CCBReader can only returns CCNodes and since we know the class penguin is connected to an object
+         // we have to specify to the compiler that that is so
+         _currentPenguin = (Penguin*)[CCBReader load:@"Penguin"];
          // initially position it on the scoop. 34,138 is the position in the node space of the _catapultArm
          CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
          // transform the world position to the node space to which the penguin will be added (_physicsNode)
@@ -104,9 +154,12 @@
         // after snapping rotation is fine
         _currentPenguin.physicsBody.allowsRotation = TRUE;
         
+        //Let the game know the penguin has been fired
+        _currentPenguin.launched = TRUE;
+        
         // follow the flying penguin
-        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
-        [_contentNode runAction:follow];
+        _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+        [_contentNode runAction:_followPenguin];
     }
 }
 
