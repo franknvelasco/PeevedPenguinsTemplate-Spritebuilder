@@ -179,8 +179,6 @@
 					<integer>1</integer>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -998,7 +996,7 @@
 										<string>Size</string>
 										<key>value</key>
 										<array>
-											<real>490</real>
+											<real>700</real>
 											<real>275</real>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -1029,6 +1027,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -2360,7 +2360,7 @@
 			<key>offset</key>
 			<real>4.1994791030883789</real>
 			<key>position</key>
-			<real>7.5666666030883789</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
