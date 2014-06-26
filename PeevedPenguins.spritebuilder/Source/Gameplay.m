@@ -194,7 +194,7 @@ static const float MIN_SPEED = 1.f;
     float energy = [pair totalKineticEnergy];
     
     // if energy is large enough, remove the seal
-    if (energy > 3000.f) {
+    if (energy > 4500.f) {
         [[_physicsNode space] addPostStepBlock:^{
             [self sealRemoved:nodeA];
         } key:nodeA];
