@@ -107,7 +107,7 @@ static const float MIN_SPEED = 1.f;
          // we have to specify to the compiler that that is so
          _currentPenguin = (Penguin*)[CCBReader load:@"Penguin"];
          // initially position it on the scoop. 34,138 is the position in the node space of the _catapultArm
-         CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 140)];
+         CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
          // transform the world position to the node space to which the penguin will be added (_physicsNode)
          _currentPenguin.position = [_physicsNode convertToNodeSpace:penguinPosition];
          // add it to the physics world
