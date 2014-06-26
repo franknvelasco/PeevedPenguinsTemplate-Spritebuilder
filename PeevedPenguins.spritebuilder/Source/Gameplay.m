@@ -25,7 +25,7 @@ static const float MIN_SPEED = 1.f;
     CCPhysicsJoint *_penguinCatapultJoint;
     //used to follow the penguin as it flies
     CCAction *_followPenguin;
-
+    CCNode *_sizeOfLevel;
     
 }
 
@@ -158,7 +158,7 @@ static const float MIN_SPEED = 1.f;
         _currentPenguin.launched = TRUE;
         
         // follow the flying penguin
-        _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+        _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:_sizeOfLevel.boundingBox];
         [_contentNode runAction:_followPenguin];
     }
 }
