@@ -34,7 +34,7 @@ static const float MIN_SPEED = 1.f;
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
     
-    CCScene *level = [CCBReader loadAsScene:@"Levels/LevelWet"];
+    CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
     
     // visualize physics bodies & joints
@@ -107,7 +107,7 @@ static const float MIN_SPEED = 1.f;
          // we have to specify to the compiler that that is so
          _currentPenguin = (Penguin*)[CCBReader load:@"Penguin"];
          // initially position it on the scoop. 34,138 is the position in the node space of the _catapultArm
-         CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 138)];
+         CGPoint penguinPosition = [_catapultArm convertToWorldSpace:ccp(34, 140)];
          // transform the world position to the node space to which the penguin will be added (_physicsNode)
          _currentPenguin.position = [_physicsNode convertToNodeSpace:penguinPosition];
          // add it to the physics world
