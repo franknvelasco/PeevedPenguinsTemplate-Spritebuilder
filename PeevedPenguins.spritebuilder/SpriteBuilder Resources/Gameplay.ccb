@@ -56,7 +56,7 @@
 					<key>value</key>
 					<array>
 						<real>229.11834716796875</real>
-						<real>105.46707153320312</real>
+						<real>105.46706390380859</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -141,7 +141,7 @@
 					<key>type</key>
 					<string>Float</string>
 					<key>value</key>
-					<real>4</real>
+					<real>500</real>
 				</dict>
 				<dict>
 					<key>name</key>
